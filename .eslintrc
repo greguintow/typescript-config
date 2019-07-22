@@ -1,0 +1,69 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"env": {
+		"es6": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"airbnb-base",
+    "plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:import/typescript",
+		"plugin:node/recommended",
+		"prettier",
+		"prettier/@typescript-eslint"
+	],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"parserOptions": {
+		"ecmaVersion": 2019,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"import",
+		"node",
+		"prettier",
+		"@typescript-eslint"
+	],
+	"rules": {
+		"semi": ["error", "never"],
+		"comma-dangle": ["error", "never"],
+		"no-param-reassign": ["error",
+			{
+			"props": false
+			}
+		],
+		"node/no-unsupported-features/es-syntax": "off",
+		"class-methods-use-this": ["error", {
+			"exceptMethods": [
+					"visitFieldDefinition"
+				]
+			}
+		],
+		"func-names": ["error", "never", {
+			"generators": "as-needed"
+		}],
+		"arrow-parens": ["error", "as-needed"],
+		"no-underscore-dangle": "off",
+		"object-shorthand": ["error", "always"],
+		"no-plusplus": ["error", {
+			"allowForLoopAfterthoughts": true
+		}],
+		"no-tabs": ["error", {
+			"allowIndentationTabs": true
+		}],
+		"indent": ["error", "tab", {
+			"SwitchCase": 1
+		}],
+		"prettier/prettier": "error",
+		"@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-member-accessibility": "off",
+		"@typescript-eslint/semi": ["error", "never"],
+		"linebreak-style": ["error", "unix"],
+		"quotes": ["error", "single"],
+		"@typescript-eslint/no-extra-parens": "error"
+	}
+}
