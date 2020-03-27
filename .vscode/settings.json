@@ -23,10 +23,12 @@
 	},
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.cursorStyle": "line",
-	"workbench.colorTheme": "Material Theme Darker",
+	"workbench.colorTheme": "Community Material Theme Darker",
 	"prettier.endOfLine": "lf",
 	"prettier.semi": false,
-	"eslint.autoFixOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
 	"prettier.singleQuote": true,
 	"javascript.preferences.quoteStyle": "single",
 	"typescript.preferences.quoteStyle": "single",
@@ -34,7 +36,6 @@
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"prettier.useTabs": true,
 	"editor.fontLigatures": true,
-	"prettier.eslintIntegration": true,
 	"editor.suggestSelection": "first",
 	"eslint.validate": [
 		"javascript",
