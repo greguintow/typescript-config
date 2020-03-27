@@ -21,7 +21,7 @@
 		"ecmaVersion": 2020,
 		"sourceType": "module"
 	},
-	"plugins": ["import", "node", "prettier", "@typescript-eslint"],
+	"plugins": ["import", "prettier", "@typescript-eslint"],
 	"settings": {
 		"import/parsers": {
 			"@typescript-eslint/parser": [".ts"]
