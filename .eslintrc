@@ -33,18 +33,22 @@
 		}
 	},
 	"rules": {
+		"linebreak-style": ["error", "unix"],
+		"prettier/prettier": "error",
 		"semi": ["error", "never"],
 		"comma-dangle": ["error", "never"],
 		"arrow-parens": ["error", "as-needed"],
+		"consistent-return": "off",
 		"no-underscore-dangle": "off",
-		"import/no-unresolved": "error",
-		"import/extensions": ["error", "never"],
-		"import/no-extraneous-dependencies": "off",
+		"func-names": "off",
+		"class-methods-use-this": "off",
+		"no-useless-constructor": "off",
 		"no-unused-vars": "off",
 		"no-extra-parens": "off",
-		"@typescript-eslint/no-extra-parens": ["off"],
 		"no-case-declarations": "off",
-		"import/prefer-default-export": "off",
+		"object-shorthand": "error",
+		"no-template-curly-in-string": "error",
+		"prefer-template": "error",
 		"no-plusplus": [
 			"error",
 			{
@@ -64,6 +68,32 @@
 				"SwitchCase": 1
 			}
 		],
+		"lines-between-class-members": "off",
+		"no-param-reassign": "off",
+		"no-console": "off",
+		"no-nested-ternary": "off",
+		"no-use-before-define": "off",
+		"prefer-arrow-callback": ["error", { "allowUnboundThis": true, "allowNamedFunctions": true }],
+		"radix": "off",
+		"prefer-const": [
+			"error",
+			{
+				"destructuring": "all",
+				"ignoreReadBeforeAssign": false
+			}
+		],
+		"quotes": [
+			"error",
+			"single",
+			{
+				"allowTemplateLiterals": true,
+				"avoidEscape": false
+			}
+		],
+		"@typescript-eslint/no-parameter-properties": "off",
+		"@typescript-eslint/ban-ts-comment": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"@typescript-eslint/no-extra-parens": ["off"],
 		"@typescript-eslint/camelcase": "off",
 		"@typescript-eslint/no-explicit-any": "off",
 		"@typescript-eslint/no-implicity-any": "off",
@@ -74,8 +104,9 @@
 		"@typescript-eslint/no-use-before-define": "off",
 		"@typescript-eslint/explicit-member-accessibility": "off",
 		"@typescript-eslint/semi": ["error", "never"],
-		"linebreak-style": ["error", "unix"],
-		"prettier/prettier": "error",
-		"quotes": ["error", "single"]
+		"import/no-unresolved": "error",
+		"import/extensions": ["error", "never"],
+		"import/no-extraneous-dependencies": "off",
+		"import/prefer-default-export": "off"
 	}
 }
