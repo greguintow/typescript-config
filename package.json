@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "npm run -s build && node dist/index.js",
-		"dev": "tsnd --ignore-watch node_modules --respawn -r tsconfig-paths/register --transpile-only src/index.ts",
+		"dev": "env-cmd tsnd --ignore-watch node_modules --respawn -r tsconfig-paths/register --transpile-only src/index.ts",
 		"build": "npm run -s clean && tsc --project tsconfig.build.json && tscpaths -p tsconfig.build.json -s ./src -o ./dist",
 		"test": "jest",
 		"clean": "rm -rf dist"
@@ -17,6 +17,7 @@
 		"@types/node": "^15.3.0",
 		"@typescript-eslint/eslint-plugin": "^4.13.0",
 		"@typescript-eslint/parser": "^4.13.0",
+		"env-cmd": "^10.1.0",
 		"eslint": "^7.17.0",
 		"eslint-config-airbnb-base": "^14.2.1",
 		"eslint-config-prettier": "^8.3.0",
